@@ -7,9 +7,9 @@
 # Ask the user for a temperature in Celsius
 celsius = float(input("Temperature in Celsius: "))
 
-# Convert to Fahrenheit
-fahrenheit = celsius * 9 / 5 + 32
-
-# Show the result
-#print(" Fahrenheit:", fahrenheit)
-print("Temperature in Fahrenheit:", fahrenheit)
+# Validate temperature
+if celsius < -273.15:
+    print("Error: Temperature cannot be below absolute zero.")
+else:
+    fahrenheit = celsius * 9 / 5 + 32
+    print("Temperature in Fahrenheit:", fahrenheit
